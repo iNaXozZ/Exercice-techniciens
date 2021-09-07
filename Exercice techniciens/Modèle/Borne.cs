@@ -8,5 +8,13 @@ namespace Exercice_techniciens.Modèle
 {
     public class Borne
     {
+        #region Attributs
+        #endregion
+        #region Constructeur
+        #endregion
+        #region Getters/Setters
+        #endregion
+        #region Méthode
+        #endregion
     }
 }
