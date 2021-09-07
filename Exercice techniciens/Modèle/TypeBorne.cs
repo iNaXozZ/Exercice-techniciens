@@ -9,6 +9,7 @@ namespace Exercice_techniciens.Modèle
     public class TypeBorne
     {
         #region Attributs
+        public static List<TypeBorne> CollClass = new List<TypeBorne>();
         private string _codeTypeBorne;
         private int _dureeRevision;
         private int _nbJourEntreRevisions;
@@ -26,6 +27,7 @@ namespace Exercice_techniciens.Modèle
             this._dureeRevision = dureeRevision;
             this._nbJourEntreRevisions = nbJourEntreRevision;
             this._nbUnitesEntreRevisions = nbUnitesEntreRevisions;
+            TypeBorne.CollClass.Add(this);
         }
         #endregion
         #region Getters/Setters

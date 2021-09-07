@@ -37,17 +37,27 @@ namespace Exercice_techniciens.Modèle
 
 
         #region Méthode
+        /// <summary>
+        /// - Doit retourner l'ID de la station
+        /// </summary>
+        /// <returns>Résultat ID de laStation</returns>
         public int GetID()
         {
-            
-            return;
+            int result = this.IdStation;
+            return result;
         }
-        public int GetLibelleEmplacement()
+        /// <summary>
+        /// Doit retourner le libellé de l'emplacement
+        /// </summary>
+        /// <returns>LibelleEmplacement</returns>
+        public string GetLibelleEmplacement()
         {
-            return; 
+            string result = this.LibelleEmplacement;
+            return result; 
         }
         public List<Visite>GetVisiteAFaire()
         {
+            
             return
         }
         #endregion
