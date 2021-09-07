@@ -24,7 +24,7 @@ namespace Exercice_techniciens.Modèle
         {
             Maintenance.Collclass.Add(this);
             this._lesStations = lesStations;
-            this._lesTechniciens = lesTechniciens, ;
+            this._lesTechniciens = lesTechniciens ;
             this._lesVisites = new List<Visite>();
         }
         #endregion

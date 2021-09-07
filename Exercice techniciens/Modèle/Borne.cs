@@ -39,7 +39,10 @@ namespace Exercice_techniciens.Modèle
 
 
         #region Méthode
-
+        /*public int GetDureeRevision()
+        {
+            return this.
+        }*/
         #endregion
     }
 }

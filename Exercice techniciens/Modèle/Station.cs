@@ -38,28 +38,28 @@ namespace Exercice_techniciens.Modèle
 
         #region Méthode
         /// <summary>
-        /// - Doit retourner l'ID de la station
+        /// - Doit retourner l'ID de la station courante
         /// </summary>
         /// <returns>Résultat ID de laStation</returns>
         public int GetID()
         {
-            int result = this.IdStation;
-            return result;
+            
+            return this.IdStation;
         }
         /// <summary>
-        /// Doit retourner le libellé de l'emplacement
+        /// Doit retourner le libellé de l'emplacement courant
         /// </summary>
         /// <returns>LibelleEmplacement</returns>
         public string GetLibelleEmplacement()
         {
-            string result = this.LibelleEmplacement;
-            return result; 
+            
+             return this.LibelleEmplacement;
         }
-        public List<Visite>GetVisiteAFaire()
+        /*public List<Visite>GetVisiteAFaire()
         {
             
             return
-        }
+        }*/
         #endregion
     }
 }
