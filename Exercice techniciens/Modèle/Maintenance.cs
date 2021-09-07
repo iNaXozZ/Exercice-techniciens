@@ -38,7 +38,34 @@ namespace Exercice_techniciens.Modèle
 
 
         #region Méthode
+        public void Reviser()
+        {
+            foreach (Visite visite in Visite.Collclass)
+            {
+                _lesVisites.Add(visite);
+            }
+        }
 
+        public void AffecterVisites()
+        {
+            Technicien technicienRetenu = null;
+            int heuresTotalesRetenues = int.MaxValue;
+           
+           
+            foreach(Visite uneVisite in this.LesVisites)
+            {
+                foreach (Technicien unTechnicien in Technicien.CollCLass)
+                {
+                    if (unTechnicien.getTempsOccupe()<heuresTotalesRetenues)
+                    {
+                        technicienRetenu = unTechnicien;
+                        heuresTotalesRetenues = unTechnicien.getTempsOccupe();
+                    }
+
+                }
+                technicienRetenu.affecterVisite(uneVisite);
+            } 
+        }
         #endregion
     }
 }

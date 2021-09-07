@@ -57,6 +57,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Modèle\StationTests.cs" />
+    <Compile Include="Modèle\TypeBorneTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -55,11 +55,11 @@ namespace Exercice_techniciens.Modèle
             
              return this.LibelleEmplacement;
         }
-        /*public List<Visite>GetVisiteAFaire()
+        public List<Visite>GetVisiteAFaire()
         {
-            
-            return
-        }*/
+            Visite v = null;
+            return v;
+        }
         #endregion
     }
 }

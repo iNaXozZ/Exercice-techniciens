@@ -39,7 +39,26 @@ namespace Exercice_techniciens.Modèle
 
 
         #region Méthode
+        public int getTempsOccupe()
+        {
+            int result = 0;
+            foreach(Visite laVisite in this._lesVisites)
+            {
+                result += laVisite.GetDureeTotale();
+            }
+            return result;
+        }
 
+        public void affecterVisite(Visite uneVisite)
+        {
+            uneVisite.ChangerEtat();
+            this._lesVisites.Add(uneVisite);
+        }
+
+        public List<Visite>getLesVisites()
+        {
+
+        }
         #endregion
     }
 }

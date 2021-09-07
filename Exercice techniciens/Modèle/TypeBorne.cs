@@ -39,14 +39,26 @@ namespace Exercice_techniciens.Modèle
 
 
         #region Méthode
+        /// <summary>
+        /// Montre la durée de la révision de la borne courante
+        /// </summary>
+        /// <returns> Durée de révision de la borne actuelle </returns>
         public int GetDureeRevision()
         {
             return this.DureeRevision;
         }
+        /// <summary>
+        /// Montre le nombre de jour entre les révisions courantes
+        /// </summary>
+        /// <returns> Montre le nombre de jours des révisions actuelles </returns>
         public int GetNbJourEntreRevisions()
         {
             return this.NbJourEntreRevisions;
         }
+        /// <summary>
+        ///  Montre le nombre d'unités entre les révisions courantes
+        /// </summary>
+        /// <returns> Les Unités entre les révisions actuelles </returns>
         public int GetNbUnitesEntreRevisions()
         {
             return this.NbUnitesEntreRevisions;

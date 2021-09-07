@@ -39,13 +39,25 @@ namespace Exercice_techniciens.Modèle
 
 
         #region Méthode
+        /// <summary>
+        /// Montre la durée de la révision de la borne courante à partir du type de la borne
+        /// </summary>
+        /// <returns> La durée de la révision de la borne actuelle </returns>
         public int GetDureeRevision()
         {
-            return _leType.GetDureeRevision();
+            return this._leType.GetDureeRevision();
         }
+        /// <summary>
+        /// Montre si la borne courante doit être à réviser ou non
+        /// </summary>
+        /// <returns> L'état de révision de la borne actuelle </returns>
         public bool estAReviser()
         {
-            if 
+            if ((this._indiceCompteurUnites > this.LeType.GetNbUnitesEntreRevisions()) || ((int)(DateTime.Now - this.DateDerniereRevision).TotalDays > this.LeType.GetNbJourEntreRevisions()))
+            {
+                return true;
+            }
+            return false;
         }
         #endregion
     }
