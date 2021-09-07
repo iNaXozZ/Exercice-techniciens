@@ -39,10 +39,14 @@ namespace Exercice_techniciens.Modèle
 
 
         #region Méthode
-        /*public int GetDureeRevision()
+        public int GetDureeRevision()
         {
-            return this.
-        }*/
+            return _leType.GetDureeRevision();
+        }
+        public bool estAReviser()
+        {
+            if 
+        }
         #endregion
     }
 }

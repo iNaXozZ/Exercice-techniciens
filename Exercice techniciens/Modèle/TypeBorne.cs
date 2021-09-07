@@ -39,7 +39,18 @@ namespace Exercice_techniciens.Modèle
 
 
         #region Méthode
-
+        public int GetDureeRevision()
+        {
+            return this.DureeRevision;
+        }
+        public int GetNbJourEntreRevisions()
+        {
+            return this.NbJourEntreRevisions;
+        }
+        public int GetNbUnitesEntreRevisions()
+        {
+            return this.NbUnitesEntreRevisions;
+        }
         #endregion
     }
 }
