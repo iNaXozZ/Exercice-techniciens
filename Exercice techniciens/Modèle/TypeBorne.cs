@@ -8,5 +8,36 @@ namespace Exercice_techniciens.Modèle
 {
     public class TypeBorne
     {
+        #region Attributs
+        private string _codeTypeBorne;
+        private int _dureeRevision;
+        private int _nbJourEntreRevisions;
+        private int _nbUnitesEntreRevisions;
+
+        
+
+        #endregion
+
+
+        #region Constructeur
+        public TypeBorne(string codeTypeBorne,int dureeRevision,int nbJourEntreRevision,int nbUnitesEntreRevisions)
+        {
+            this._codeTypeBorne = codeTypeBorne;
+            this._dureeRevision = dureeRevision;
+            this._nbJourEntreRevisions = nbJourEntreRevision;
+            this._nbUnitesEntreRevisions = nbUnitesEntreRevisions;
+        }
+        #endregion
+        #region Getters/Setters
+        public string CodeTypeBorne { get => _codeTypeBorne; set => _codeTypeBorne = value; }
+        public int DureeRevision { get => _dureeRevision; set => _dureeRevision = value; }
+        public int NbJourEntreRevisions { get => _nbJourEntreRevisions; set => _nbJourEntreRevisions = value; }
+        public int NbUnitesEntreRevisions { get => _nbUnitesEntreRevisions; set => _nbUnitesEntreRevisions = value; }
+        #endregion
+
+
+        #region Méthode
+
+        #endregion
     }
 }
